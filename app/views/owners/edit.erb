@@ -5,5 +5,6 @@
   <form action="/owners/<%= @owner.id %>" method="POST">
     <input id="hidden" type="hidden" name="_method" value="patch">
     <label>Edit the Owner's Name:</label>
-    <br> 
+    <br>
+    <input type="text"  name="owner[name]" value="<%= @owner.name %>">
   </form>
