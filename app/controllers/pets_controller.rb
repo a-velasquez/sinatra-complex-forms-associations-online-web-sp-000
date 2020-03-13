@@ -1,4 +1,4 @@
-cclass PetsController < ApplicationController
+class PetsController < ApplicationController
 
   get '/pets' do
     @pets = Pet.all
@@ -42,4 +42,5 @@ cclass PetsController < ApplicationController
     @pet.save
 
     redirect to "pets/#{@pet.id}"
+  end
 end
